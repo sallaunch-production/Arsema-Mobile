@@ -363,7 +363,7 @@ eas build --platform ios --profile production
 ## Repository
 
 GitLab: `gitlab.com/arsema2/arsema-mg-apps/arsema-mg-react-native`
-EAS Owner: `afry.arsema`
+EAS Owner: `saalll.arsema`
 
 ## License
 
