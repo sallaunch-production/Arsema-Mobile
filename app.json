@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "name": "Arsema Mobile",
+    "slug": "arsema-mobile",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/logo-arsema.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo-arsema.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.arsema.mg",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Arsema needs camera access to capture ID cards and verify your identity",
+        "NSPhotoLibraryUsageDescription": "Arsema needs photo library access to select ID card images"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/logo-arsema.png"
+      },
+      "package": "com.arsema.mg",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "arsema-mobile",
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "Arsema needs camera access to capture ID cards and verify your identity",
+          "enableCodeScanner": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Arsema needs access to your photos to select ID card images",
+          "cameraPermission": "Arsema needs access to your camera to capture ID cards and verify your identity"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26
+          },
+          "ios": {
+            "deploymentTarget": "15.5"
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/logo-arsema.png",
+          "color": "#E31E24"
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "99005557-fd89-410a-a24a-283b0fd84caa"
+      }
+    },
+    "owner": "saalll"
+  }
+}

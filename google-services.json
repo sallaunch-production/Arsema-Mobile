@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "518046493901",
+    "project_id": "arsema-mg-apps",
+    "storage_bucket": "arsema-mg-apps.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518046493901:android:89caba21e5ac7dd16bcd84",
+        "android_client_info": {
+          "package_name": "com.arsema.mg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUk2Edjzlve-DeCOQqrJ9Is9bKH6NfjF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
